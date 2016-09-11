@@ -1,0 +1,375 @@
+/*write by fay time:2014-09-09 10:03*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-repeat: no-repeat;
+  font-family: "微软雅黑";
+
+}
+*:focus {
+  outline: none;
+}
+*, *:before, *:after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ol, ul, li {
+
+  padding: 0;
+  margin: 0;
+  display: block;
+
+}
+
+u, i {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+
+}
+
+fieldset, img {
+  border: 0;
+
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  background-color: #f7f7f7;
+}
+
+input, select, textarea {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+a:link {
+
+  text-decoration: none;
+}
+
+a:visited {
+
+  text-decoration: none;
+}
+
+.f-x{
+  zoom: 1;
+}
+.f-x:after{
+  content:".";display:block;height:0;clear:both;visibility:hidden
+}
+
+
+
+.small-loading {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  /*background-image: url('/pages/public/css/images/newloading1.gif');*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*background-size: 100% auto;*/
+  border-radius: 3px;
+  >li{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #67d8fd;
+    border-radius: 4px;
+    opacity: 0.2;
+
+    -webkit-animation: show1 0.8s infinite ease-in-out;
+  }
+  >li:first-child{
+    top:1px;
+    left:50%;
+    margin-left: -2px;
+    -webkit-animation-delay: -0.8s;
+  }
+  >li:nth-child(2){
+    right:5px;
+    top:5px;
+    -webkit-animation-delay: -0.7s;
+  }
+  >li:nth-child(3){
+    right: 1px;
+    top:50%;
+    margin-top: -2px;
+    -webkit-animation-delay: -0.6s;
+  }
+  >li:nth-child(4){
+    right:5px;
+    bottom:5px;
+    -webkit-animation-delay: -0.5s;
+  }
+  >li:nth-child(5){
+    bottom: 1px;
+    left:50%;
+    margin-left: -2px;
+    -webkit-animation-delay: -0.4s;
+  }
+  >li:nth-child(6){
+    left:5px;
+    bottom:5px;
+    -webkit-animation-delay: -0.3s;
+  }
+  >li:nth-child(7){
+    left: 1px;
+    top:50%;
+    margin-top: -2px;
+    -webkit-animation-delay: -0.2s;
+  }
+  >li:nth-child(8){
+    left:5px;
+    top:5px;
+    -webkit-animation-delay: -0.1s;
+  }
+}
+
+
+@-webkit-keyframes show1 {
+  100%{
+    opacity: 0.8;
+  }
+}
+
+
+/*新弹窗*/
+.back-black{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+.yalert-box {
+  top: 20vh;
+  width: 90vw;
+  left: 5vw;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: fixed;
+  color: #000;
+  z-index: 9999999;
+  border-radius: 3px;
+}
+
+.yalert-box-tip {
+  text-align: center;
+  padding: 10px
+}
+
+.yalert-box-top {
+
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.yalert-box-btn {
+  border-radius: 0 0 3px 3px;
+  text-align: center;
+  margin-top: 20px;
+
+  a {
+    display: inline-block;
+    padding: 15px 0px;
+    width: 50%;
+    color: #3399cc;
+    font-size: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(237, 237, 237, 1);
+    &:nth-child(2) {
+
+      border-left: 1px solid rgba(237, 237, 237, 1);
+
+    }
+  }
+
+}
+
+
+/**/
+.city-box{
+  position: fixed;
+  z-index: 9999999;
+
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+}
+.city-top{
+  height: 30px;
+  overflow: hidden;
+}
+.city-close{
+  height: 24px;
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 60px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 3px;
+  background-color: #0aabff;
+  color: #fff;
+  float: left;
+}
+.city-sub{
+
+  height: 24px;
+  margin-top: 3px;
+  margin-right: 3px;
+  width: 60px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 3px;
+  background-color: #0aabff;
+  color: #fff;
+  float: right;
+}
+.city-select-box{
+  overflow: hidden;
+  height:210px;
+  position: relative;
+}
+.city-select-box>div{
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.city-select-box>dl{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.city-select-box>div>ul{
+  width: 100%;
+  text-align: center;
+  top: 90px;
+  left: 0;
+  position: absolute;
+  transition:top 100ms ease-in;
+}
+.city-select-box>div>ul>li{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+
+}
+.top-zz{
+  height: 90px;
+  position: absolute;
+  width: 100%;
+  top:0;
+  left: 0;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,1)),to(rgba(255,255,255,0.5)));
+  border-bottom: 1px solid #eee;
+}
+.bottom-zz{
+  height: 90px;
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  left: 0;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.5)),to(rgba(255,255,255,1)));
+  border-top: 1px solid #eee;
+}
+.city-select-box>dl{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+.city-select-box>dl>dd{
+  float: left;
+  width: 33.3333333%;
+  height: 100%;
+}
+
+/*总页面*/
+
+@import "main";
+.header{
+  height: 82px;
+  background-color: @color1;
+
+}
+.logo{
+  height: 62px;
+  width: 144px;
+  background: url('img/logo.png');
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+}
+.history-back{
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  background-color: @color1;
+  color: @color2;
+}
+.example-box{
+  margin:0 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid @color3;
+}
+.example-title{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.example-list{
+  overflow: hidden;
+}
+.example-list>a{
+  float: left;
+  padding: 0 10px;
+}
