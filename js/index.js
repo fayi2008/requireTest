@@ -1,9 +1,14 @@
-require(['jquery','vue','less'],function ($,vue) {
+require(['jquery','vue','public','less'],function ($,vue,public) {
+
+    console.log(public)
     $.getJSON('./js/index.json').done(function (rs) {
 
         new vue({
             el: '#index',
-            data: rs
+            data: rs,
+            ready:function () {
+                public._back()
+            }
         })
 
 

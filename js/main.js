@@ -3,6 +3,7 @@ require.config({
     paths:{
         jquery:'jquery.js',
         vue:'vue.js',
-        less:'less.js'
+        less:'less.js',
+        public:'public.js'
     }
 })
