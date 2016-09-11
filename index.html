@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/com.css">
+    <link type="text/css" rel="stylesheet" href="css/banner1.css">
+    <script data-main="./js/main" src="./js/require.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body id="h1">
+<div id="header" class="header">
+    <div class="logo"></div>
+</div>
+<div id="swiper_box">
+    <!-- Slider main container -->
+    <div class="swiper-container" id="swiper">
+
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" v-for="list in result" :style="{'backgroundColor':list.pic}">{{list.name}}</div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="tips">{{tip}}</div>
+</div>
+</body>
+</html>

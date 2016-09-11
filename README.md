@@ -1,0 +1,3 @@
+这是一个简单的requireJS例子
+
+简单的架构了如何使用requireJS
