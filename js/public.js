@@ -7,9 +7,7 @@
 
 })(typeof window !== "undefined" ? window : this, function (win, noGlobal) {
 
-    var plus = function () {
-
-    }
+    var plus = function () {}
 
     plus.fn = plus.prototype;
 
