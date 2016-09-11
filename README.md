@@ -20,3 +20,7 @@ require(['jquery'],function ($) {
 
 
 })
+
+为页面级requireJS的标准页面级写法
+
+其中[]里面是配置里paths的KEY值  后面接着的function($) 的为 自定义的初始化
