@@ -1,5 +1,4 @@
-require(['jquery'],function ($) {
-    $(function () {
-        alert(0)
-    })
+require(['jquery','vue'],function ($,vue) {
+
+
 })

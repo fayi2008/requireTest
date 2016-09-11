@@ -1,6 +1,7 @@
 require.config({
     baseUri:'./js',
     paths:{
-        jquery:'jquery.js'
+        jquery:'jquery.js',
+        vue:'vue.js'
     }
 })
