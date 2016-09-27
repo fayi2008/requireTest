@@ -28,6 +28,7 @@
 
             document.querySelector('.logo').addEventListener('click', function () {
                 location.href = '/test/index.html'
+                
             })
         }
     }
